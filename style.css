@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
+ }
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
@@ -64,4 +64,45 @@ body {
     box-sizing: border-box;
     width: 30%;
     border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao__conteudo{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+     }
+
+     .apresentacao__conteudo__titulo {
+        font-size: 36px;
+        font-family: 'Krona One', sans-serif;
+        text-align: center;
+    }
+    
+    .apresentacao__conteudo_texto {
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+     .apresentacao__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .apresentacao__imagem {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 10px;
+        margin: 0 0 40px 0;
 }
