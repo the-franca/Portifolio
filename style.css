@@ -5,22 +5,41 @@
     padding: 0;
 }
 
-body {
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
+:root {
+    --cor-primaria: #2A2438;
+    --cor-secundaria: #DBD8E3;
+    --cor-tercearia: #A7A7A7;
+    --cor-hover: #352F44;
 }
 
-.titulo-destaque {
-    color: #22D4FD;
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--cor-tercearia);
 }
 
 .apresentacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10% 15%;
+    padding: 5% 10%;
 }
 
 .apresentacao__conteudo{
@@ -35,6 +54,10 @@ body {
     font-family: 'Krona One', sans-serif;
 }
 
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
 .apresentacao__conteudo_texto {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
@@ -42,28 +65,57 @@ body {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 32px;
 }
 
-.apresentacao__links_link {
-    background-color: #22D4FD;
+.apresentacao__links__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-tercearia);
     width: 280px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
-    color: #000000;
+    color: var(--cor-secundaria);
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.apresentacao__links__link img {
+    scale: 80%;
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover) ;
 }
 
 .apresentacao__imagem {
     box-sizing: border-box;
     width: 30%;
     border-radius: 10px;
+}
+
+.rodape {
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {
