@@ -19,7 +19,8 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%;
+    padding: 2% 15% 0 15%;
+    
 }
 
 .cabecalho__menu {
@@ -202,5 +203,19 @@ body {
 
     .apresentacao__conteudo__textolista li {
         list-style-type: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cabecalho__menu {
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
     }
 }
