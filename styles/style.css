@@ -170,16 +170,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        
+        text-align: center;
      }
-
-     .apresentacao__conteudo__titulo {
-        text-align: center;
-    }
-    
-    .apresentacao__conteudo__texto {
-        text-align: center;
-    }
 
      .apresentacao__links {
         gap: 20px;
@@ -193,20 +185,13 @@ body {
         
     }
 
-    .apresentacao__conteudo__substitulo {
-        text-align: center;
-    }
-
-    .apresentacao__conteudo__textolista {
-        text-align: center;
-    }
-
     .apresentacao__conteudo__textolista li {
         list-style-type: none;
     }
+
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 701px) and (max-width: 1200px) {
     .cabecalho__menu {
         width: 100%;
         gap: 30px;
@@ -217,5 +202,20 @@ body {
         display: flex;
         flex-direction: column-reverse;
         gap: 40px;
+        padding: 5%;
     }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        text-align: center;
+    }
+        
+    .apresentacao__links__link {
+        width: 30%;
+    }
+
+    .apresentacao__conteudo__textolista li {
+        list-style-type: none;
+    }
+
 }
